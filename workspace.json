@@ -2,6 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "my-borad": "apps/my-borad"
+    "my-board": "apps/my-board"
   }
 }

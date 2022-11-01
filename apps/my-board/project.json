@@ -1,16 +1,16 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/my-borad/src",
+  "sourceRoot": "apps/my-board/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/my-borad",
-        "main": "apps/my-borad/src/main.ts",
-        "tsConfig": "apps/my-borad/tsconfig.app.json",
-        "assets": ["apps/my-borad/src/assets"]
+        "outputPath": "dist/apps/my-board",
+        "main": "apps/my-board/src/main.ts",
+        "tsConfig": "apps/my-board/tsconfig.app.json",
+        "assets": ["apps/my-board/src/assets"]
       },
       "configurations": {
         "production": {
@@ -19,8 +19,8 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/my-borad/src/environments/environment.ts",
-              "with": "apps/my-borad/src/environments/environment.prod.ts"
+              "replace": "apps/my-board/src/environments/environment.ts",
+              "with": "apps/my-board/src/environments/environment.prod.ts"
             }
           ]
         }
@@ -29,11 +29,11 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "my-borad:build"
+        "buildTarget": "my-board:build"
       },
       "configurations": {
         "production": {
-          "buildTarget": "my-borad:build:production"
+          "buildTarget": "my-board:build:production"
         }
       }
     },
@@ -41,14 +41,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/my-borad/**/*.ts"]
+        "lintFilePatterns": ["apps/my-board/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/my-borad"],
+      "outputs": ["coverage/apps/my-board"],
       "options": {
-        "jestConfig": "apps/my-borad/jest.config.ts",
+        "jestConfig": "apps/my-board/jest.config.ts",
         "passWithNoTests": true
       }
     }

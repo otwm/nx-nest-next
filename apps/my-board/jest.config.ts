@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'my-borad',
+  displayName: 'my-board',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -12,5 +12,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/my-borad',
+  coverageDirectory: '../../coverage/apps/my-board',
 };

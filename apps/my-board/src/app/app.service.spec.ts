@@ -14,8 +14,8 @@ describe('AppService', () => {
   });
 
   describe('getData', () => {
-    it('should return "Welcome to my-borad!"', () => {
-      expect(service.getData()).toEqual({ message: 'Welcome to my-borad!' });
+    it('should return "Welcome to my-board!"', () => {
+      expect(service.getData()).toEqual({ message: 'Welcome to my-board!' });
     });
   });
 });
