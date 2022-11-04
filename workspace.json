@@ -3,6 +3,6 @@
   "version": 2,
   "projects": {
     "my-board": "apps/my-board",
-    "t5": "apps/t5"
+    "my-board-pages": "libs/my-board-pages"
   }
 }
